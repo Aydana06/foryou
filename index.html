@@ -78,6 +78,13 @@
         font-size: 36px;
         font-weight: 800;
       }
+      .title {
+        padding-top: 10px;
+      }
+      .subtitle {
+        font-size: 12px;
+        padding: 10px 0px;
+      }
       button {
         background: linear-gradient(90deg, #ffcf95, #ff9a7b);
         border: 0;
@@ -118,7 +125,7 @@
           <div class="greeting">
             <h1>Төрсөн өдрийн мэнд!</h1>
             <div class="name" id="person">Oka</div>
-            <p>нагхшгүшз</p>
+            <p>Хүсэл мөрөөдөл чинь биелэх болтугай</p>
             <button id="wishBtn">Надад хайртай бол энд дар ❤️</button>
             <button id="musicBtn" class="secondary">Дуу тоглуулах 🎵</button>
           </div>
@@ -137,7 +144,7 @@
       wishBtn.onclick = () => {
         alert("Би ч гэсэн чамд хайртай шүү ❤️");
         wishBtn.disabled = true;
-        wishBtn.textContent = "I love you";
+        wishBtn.textContent = "Хайртай гэдэг нь баталгаажлаа";
       };
 
       musicBtn.onclick = () => audio.play();
